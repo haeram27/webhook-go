@@ -26,3 +26,16 @@ docker build -t webhook-go:latest .
 ```bash
 docker run --rm -p 8080:8080 webhook-go:latest
 ```
+
+## RestApi Test
+
+### 헬스체크
+
+```bash
+curl -i http://localhost:8080/healthz
+```
+### 웹훅
+
+```bash
+curl -i -X POST http://localhost:8080/webhook -d '{"event":"ping"}'
+```
