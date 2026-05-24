@@ -2,6 +2,10 @@
 
 간단한 Go 기반 webhook 서버입니다.
 
+## webhook 참고
+
+- (github webhook 가이드)[https://docs.github.com/ko/webhooks]
+
 ## 로컬 실행
 
 ```bash
